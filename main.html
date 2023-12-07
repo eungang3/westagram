@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f4e53bfd3a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>메인</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <nav>
+        <div class="left">
+          <img
+            src="images/instagram.png"
+            alt="instagram logo"
+            class="logo-image"
+          />
+          <div class="vertical-line"></div>
+          <a href="#main"
+            ><img
+              src="images/logo.png"
+              alt="instagram logo text"
+              class="logo-text"
+          /></a>
+        </div>
+        <form method="post" id="search-form" class="middle">
+          <label class="visually-hidden" for="search">검색</label>
+          <input id="search" name="search" type="text" />
+          <div class="placeholder">
+            <img
+              src="images/magnifying-glass.png"
+              alt="magnifying glass"
+              class="magnifying-glass"
+            />
+            <span>검색</span>
+          </div>
+        </form>
+        <div class="right">
+          <img src="images/compass.png" alt="compass" class="compass" />
+          <img src="images/heart.png" alt="heart" class="heart" />
+          <img src="images/user.png" alt="my" class="my" />
+        </div>
+      </nav>
+      <main class="main-container">
+        <div class="feeds box">
+          <article>
+            <div class="profile-area">
+              <img
+                class="profile"
+                src="images/profile.png"
+                alt="image of profile"
+              />
+              <a href="#"><p class="username">westa_12</p></a>
+              <img src="images/more.png" alt="dots" class="dots"/>
+            </div>
+            <img class="photo" src="images/post.png" alt="image of yogurt" />
+            <div class="icon-area">
+              <img src="images/heart.png" alt="heart icon" class="heart" />
+              <img
+                src="images/messenger.png"
+                alt="chat bubble icon"
+                class="reply"
+              />
+              <img src="images/upload.png" alt="share icon" class="share" />
+              <img
+                src="images/bookmark-white.png"
+                alt="bookmark icon"
+                class="bookmark"
+              />
+            </div>
+            <div class="description-area">
+              <div class="likes">
+                <img src="images/profile2.png" class="profile" alt="image of profile" />
+                <p><a href="#" class="username">coding_js</a>님 <span>외 10명</span>이 좋아합니다.</p>
+              </div>
+              <div class="description">
+                <a href="#"><p class="username">westa_12</p></a>
+                <p class="text">위워크에서 진행한 베이킹 클래스...</p>
+                <p class="more gray">더 보기</p>
+              </div>
+              <div class="replies">
+                <a href="#"><p class="username">coding_js</p></a>
+                <p class="text">맛있겠다~~~!!</p>
+                <img src="images/heart.png" alt="heart icon" class="heart" />
+              </div>
+              <div class="time gray">42분 전</ㅇ>
+            </div>
+            <div class="reply-area">
+              <form method="post" id="reply-form">
+                <label class="visually-hidden" for="reply"
+                  >전화번호, 사용자 이름 또는 이메일</label
+                >
+                <input id="reply" name="reply" type="text" placeholder="댓글 달기..."/>
+                <input type="submit" value="게시" />
+              </form>
+            </div>
+          </article>
+        </div>
+        <div class="main-right">
+            <div class="my-profile">
+                <a href="#"><img src="images/profile.png" alt="profile image" class="profile"></a>
+                <div class="info-area">
+                    <a href="#"><p class="username">westa_12</p></a>
+                    <span class="gray">Westa</span>
+                    <span class="vertical-line gray">|</span>
+                    <span class="gray">위스타</span>
+                </div>
+            </div>
+            <div class="story box">
+                <div class="title-area">
+                    <p class="title gray">스토리</p>
+                    <a href="#"><p class="show-all">모두 보기</p></a>
+                </div>
+                <div class="profile-item">
+                    <a href="#"><img src="images/profile2.png" alt="profile image" class="profile"></a>
+                    <div class="info-area">
+                        <a href="#"><p class="username">westa_12</p></a>
+                    <span class="gray">16분 전</span>
+                    </div>
+                </div>
+                <div class="profile-item">
+                    <a href="#"><img src="images/profile2.png" alt="profile image" class="profile"></a>
+                    <div class="info-area">
+                        <a href="#"><p class="username">westa_12</p></a>
+                    <span class="gray">30분 전</span>
+                    </div>
+                </div>
+                <div class="profile-item">
+                    <a href="#"><img src="images/profile2.png" alt="profile image" class="profile"></a>
+                    <div class="info-area">
+                        <a href="#"><p class="username">westa_12</p></a>
+                    <span class="gray">2시간 전</span>
+                    </div>
+                </div>
+                <div class="profile-item">
+                    <a href="#"><img src="images/profile2.png" alt="profile image" class="profile"></a>
+                    <div class="info-area">
+                        <a href="#"><p class="username">westa_12</p></a>
+                    <span class="gray">3시간 전</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendation box">
+                <div class="title-area">
+                    <p class="title gray">회원님을 위한 추천</p>
+                    <a href="#"><p class="show-all">모두 보기</p></a>
+                </div>
+                <div class="profile-item">
+                    <a href="#"><img src="images/profile2.png" alt="profile image" class="profile"></a>
+                    <div class="info-area">
+                        <a href="#"><p class="username">westa_12</p></a>
+                    <span class="gray">coding_js님 외 10명이...</span>
+                    </div>
+                    <a href="#" class="follow">팔로우</a>
+                </div>
+                <div class="profile-item">
+                    <a href="#"><img src="images/profile2.png" alt="profile image" class="profile"></a>
+                    <div class="info-area">
+                        <a href="#"><p class="username">westa_12</p></a>
+                    <span class="gray">coding_js님 외 10명이...</span>
+                    </div>
+                    <a href="#" class="follow">팔로우</a>
+                </div>
+                <div class="profile-item">
+                    <a href="#"><img src="images/profile2.png" alt="profile image" class="profile"></a>
+                    <div class="info-area">
+                        <a href="#"><p class="username">westa_12</p></a>
+                    <span class="gray">coding_js님 외 10명이...</span>
+                    </div>
+                    <a href="#" class="follow">팔로우</a>
+                </div>
+            </div>
+            <p class="company">
+                <a href="#" class="gray">Instagram 정보</a> 
+                <span class="gray">・</span>
+                <a href="#" class="gray">지원</a> 
+                <span class="gray">・</span>
+                <a href="#" class="gray">홍보 센터</a> 
+                <span class="gray">・</span>
+                <a href="#" class="gray">API</a> 
+                <span class="gray">・</span>
+                <a href="#" class="gray">채용 정보</a> 
+                <span class="gray">・</span>
+                <a href="#" class="gray">개인정보처리방침</a> 
+                <span class="gray">・</span>
+                <a href="#" class="gray">약관</a> 
+                <span class="gray">・</span>
+                <a href="#" class="gray">디렉터리</a> 
+                <span class="gray">・</span>
+                <a href="#" class="gray">프로필</a> 
+                <span class="gray">・</span>
+                <a href="#" class="gray">해시태그</a> 
+                <span class="gray">・</span>
+                <a href="#" class="gray">언어</a> 
+            </p>
+            <p class="copyright gray">Copyright. 2019 WESTAGRAM</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

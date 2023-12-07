@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 350px;
+  border: solid 1px rgb(227, 227, 227);
+  padding: 32px;
+}
+
+.login-container .logo {
+  width: 200px;
+  margin: 16px 0 32px 0;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#login-form input {
+  display: block;
+  width: 268px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid rgb(227, 227, 227);
+  padding: 9px 0 7px 8px;
+  margin-bottom: 6px;
+  background-color: #fafafa;
+}
+
+.login-container .login-btn {
+  width: 100%;
+  height: 32px;
+  border: none;
+  margin: 6px 0;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #4cb5f9;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.login-container a {
+  text-decoration: none;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #00376b;
+}
+
+/* main */
+/* main 네비게이션 */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 62px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 10%;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    background-color: #fff;
+    z-index: 1;
+  }
+  
+  nav .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .logo-image {
+    width: 20px;
+  }
+  
+  nav .vertical-line {
+    top: 0;
+    bottom: 0;
+    border-right: 1px solid #000;
+    margin: 0 8px 0 14px;
+    width: 1px;
+    height: 20px;
+  }
+  
+  nav a {
+    display: flex;
+  }
+  
+  nav .logo-text {
+    width: 100px;
+  }
+  
+  #search-form {
+    position: relative;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 3px;
+    display: flex;
+    background-color: #fafafa;
+    padding: 4px 8px;
+    width: 25%;
+  }
+  
+  #search-form input {
+    border: none;
+    background-color: #fafafa;
+    width: 100%;
+  }
+  
+  #search-form .placeholder {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  #search-form .magnifying-glass {
+    width: 10px;
+    height: fit-content;
+    margin-right: 4px;
+  }
+  
+  #search-form span {
+    font-size: 12px;
+    color: rgb(188, 188, 188);
+  }
+  
+  .right img {
+    width: 24px;
+    margin-left: 24px;
+  }
+  
+  /* main 포스트 */
+  .main-wrapper {
+    background-color: #fafafa;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-container {
+    padding-top: 110px;
+    padding-bottom: 80px;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .gray {
+    color: rgb(132, 132, 132);
+  }
+  
+  .box {
+    border: 1px solid rgb(227, 227, 227);
+    background-color: #fff;
+    border-radius: 3px;
+  }
+  
+  .profile {
+    border-radius: 50%;
+  }
+  
+  .feeds {
+    width: 500px;
+  }
+  
+  .profile-area {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .profile-area .profile {
+    width: 30px;
+    margin-right: 12px;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  
+  .profile-area .dots {
+    margin-left: auto;
+    width: 20px;
+  }
+  
+  .feeds article > .photo {
+    width: 100%;
+  }
+  
+  .icon-area {
+    padding: 8px;
+    display: flex;
+  }
+  
+  .icon-area img {
+    width: 24px;
+    margin-right: 12px;
+  }
+  
+  .icon-area .bookmark {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+  .description-area {
+    padding: 8px;
+  }
+  
+  .description-area > div {
+    display: flex;
+    align-items: center;
+    padding: 2px 4px;
+  }
+  
+  .description-area .username {
+    margin-right: 4px;
+  }
+  
+  .description-area .likes {
+    margin-bottom: 12px;
+  }
+  
+  .description-area .likes img {
+    width: 20px;
+    margin-right: 6px;
+  }
+  
+  .description-area .description .more {
+    margin-left: 4px;
+  }
+  
+  .replies img {
+    width: 10px;
+    height: 10px;
+    margin-left: auto;
+  }
+  
+  .reply-area {
+    border-top: 1px solid rgb(227, 227, 227);
+    margin-top: 4px;
+  }
+  
+  #reply-form {
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+  }
+  
+  #reply-form input[type="text"] {
+    width: 100%;
+    height: 36px;
+    margin-right: 8px;
+    border: none;
+  }
+  
+  #reply-form input[type="submit"] {
+    border: none;
+    background-color: #fff;
+    font-weight: bold;
+    color: #b9e3ff;
+    cursor: pointer;
+  }
+  
+  .main-right {
+    width: 250px;
+    margin-left: 24px;
+  }
+  
+  .main-right > div {
+    margin-bottom: 10px;
+  }
+  
+  .my-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .my-profile img {
+    width: 42px;
+    margin-right: 12px;
+  }
+  
+  .main-right .box {
+    padding: 12px;
+  }
+  
+  .main-right .title-area {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .profile-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .profile-item .follow {
+    margin-left: auto;
+    font-weight: bold;
+    color: #4cb5f9;
+  }
+  
+  .profile-item img {
+    width: 30px;
+    margin-right: 12px;
+  }
+  
+  .story {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .recommendation div:last-child {
+    margin-bottom: 0;
+  }
+  
+  .company {
+    line-height: 1.5;
+    margin: 16px 0;
+  }
+  
