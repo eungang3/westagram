@@ -1,4 +1,5 @@
-// login
+'use strict'
+
 const loginBtn = document.getElementsByClassName('login-btn')[0];
 const loginForm = document.getElementById('login-form');
 const usernameInput = document.getElementById('username');
@@ -12,3 +13,4 @@ loginForm.addEventListener('keyup', function(){
         loginBtn.disabled = true;
     }
 })
+
