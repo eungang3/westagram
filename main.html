@@ -84,19 +84,21 @@
                 <p class="more gray">더 보기</p>
               </div>
               <div class="replies">
-                <a href="#"><p class="username">coding_js</p></a>
-                <p class="text">맛있겠다~~~!!</p>
-                <img src="images/heart.png" alt="heart icon" class="heart" />
+                <div class="reply-content">
+                  <a href="#"><p class="username">coding_js</p></a>
+                  <p class="text">맛있겠다~~~!!</p>
+                  <img src="images/heart.png" alt="heart icon" class="heart" />
+                </div>
               </div>
               <div class="time gray">42분 전</ㅇ>
             </div>
-            <div class="reply-area">
-              <form method="post" id="reply-form">
+            <div class="reply-write-area">
+              <form id="reply-form">
                 <label class="visually-hidden" for="reply"
                   >전화번호, 사용자 이름 또는 이메일</label
                 >
-                <input id="reply" name="reply" type="text" placeholder="댓글 달기..."/>
-                <input type="submit" value="게시" />
+                <input id="reply-input" name="reply" type="text" placeholder="댓글 달기..."/>
+                <button class="reply-btn" disabled>게시</button>
               </form>
             </div>
           </article>
@@ -202,5 +204,6 @@
         </div>
       </main>
     </div>
+    <script type="text/javascript" src="main_scripts.js"></script>
   </body>
 </html>

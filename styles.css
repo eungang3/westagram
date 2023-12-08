@@ -261,13 +261,25 @@ nav .logo-text {
   margin-left: 4px;
 }
 
-.replies img {
+.replies {
+    display: flex;
+    flex-direction: column;
+}
+
+.reply-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.reply-content img {
   width: 10px;
   height: 10px;
   margin-left: auto;
 }
 
-.reply-area {
+.reply-write-area {
   border-top: 1px solid rgb(227, 227, 227);
   margin-top: 4px;
 }
@@ -279,18 +291,23 @@ nav .logo-text {
 }
 
 #reply-form input[type="text"] {
-  width: 100%;
+  width: 90%;
   height: 36px;
   margin-right: 8px;
   border: none;
 }
 
-#reply-form input[type="submit"] {
+#reply-form button {
+  width: 10%;
   border: none;
   background-color: #fff;
   font-weight: bold;
-  color: #b9e3ff;
+  color: #4cb5f9; 
   cursor: pointer;
+}
+
+#reply-form button:disabled {
+    color: #b9e3ff;
 }
 
 .main-right {
